@@ -23,5 +23,5 @@ using namespace std;
 
     int arr[5] = {3,8,10,17};
 
-    cout << "Pivot is " << getPivot(arr, 5);
+    cout << "Pivot is " << getPivot(arr, 5) << endl;
  }
