@@ -1,12 +1,22 @@
 #include <iostream>
 using namespace std;
 
+char toLowercase (char ch){
+    if (ch >= 'a' && ch <= 'z'){
+        return ch;
+    }
+    else {
+        char temp = ch - 'A' + 'a';
+        return temp;
+    }
+}
+
 bool checkPalindrome (char a[], int n){
     int s = 0;
     int e = n-1;
 
     while (s<=e){
-        if (a[s] != a[e]){
+        if (toLowercase(a[s]) != toLowercase(a[e])){
             return 0;
         }
         else {
@@ -52,6 +62,9 @@ int main(){
     cout << name << endl;
  
     cout << "Palindrome or Not : " << checkPalindrome(name, len) << endl;
+
+    cout << "CHARACTER IS :" << toLowercase('b') << endl;
+    cout << "CHARACTER IS :" << toLowercase('C') << endl;
 
     return 0;
 }
