@@ -32,7 +32,7 @@ int main(){
 
     string s;
     cin >> s;
-    cout << getMaxOccCharacter(s) << endl;
+    cout << getMaxOccCharacter(s);
 
     return 0;
 }
