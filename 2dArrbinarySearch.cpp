@@ -37,7 +37,7 @@ int main() {
         cout << "Element is present in the array" << endl;
     }
     else{
-        cout << "Element is not present in the array";
+        cout << "Element is not present in the array" << endl;
     }
     return 0;
 }
