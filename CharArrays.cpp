@@ -10,7 +10,7 @@ int main(){
     name[2] = '\0';
 
     cout << "Your name is ";
-    cout << name << endl;
+    cout << name;
 
     return 0;
 
